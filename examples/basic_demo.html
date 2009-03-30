@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Simple demonstration of Simple CSS forms</title>
+    <link href="../../simple-css-typography/typography.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/forms.css" rel="stylesheet" type="text/css">
+    <style type="text/css" media="screen">
+body {
+	font: .75em/1.5 "Lucida Grande", "Lucida Sans Unicode", helvetica, verdana, arial, sans-serif;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 610px;
+}
+strong {
+  background: #ffc;
+}
+    </style>
+  </head>
+  <body>
+
+    <h1>Welcome to Simple CSS Forms</h1>
+
+    <form action="/posts/new" method="post">
+      <fieldset>
+        <legend>Post content</legend>
+        <div>
+          <label for="post_title">
+            <strong>Choose a title</strong> for your post
+          </label>
+          <input id="post_title" name="post[title]" type="text">
+        </div>
+        <div>
+          <label for="post_content">
+            <strong>Supply actual content</strong> for your post
+          </label>
+          <textarea id="post_content" name="post[content]"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Post metadata</legend>
+        <div class="inline">
+          <label for="post_category">
+            <strong>Choose category</strong> for the post
+          </label>
+          <select id="post_category" name="post[category]">
+            <option value="">Uncategorized</option>
+          </select>
+        </div>
+        <div class="inline">
+          <label for="post_tags">
+            <strong>Add tags</strong> to your post
+          </label>
+          <input id="post_tags" name="post[tags]" type="text">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Post privacy</legend>
+        <div class="inline">
+          <input id="post_allow_comments" name="post[allow_comments]" type="checkbox">
+          <label for="post_allow_comments">
+            <strong>Allow comments</strong> on the post
+          </label>
+        </div>
+        <div class="inline">
+          <input id="post_private" name="post[private]" type="checkbox">
+          <label for="post_private">
+            <strong>Make private</strong> so that only friends see it
+          </label>
+        </div>
+      </fieldset>
+      <p>
+        <input type="submit" value="Preview this post">
+        or
+        <a href="#">cancel and go back</a>
+      </p>
+    </form>
+
+  </body>
+</html>
