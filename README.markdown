@@ -18,7 +18,7 @@ Simple CSS forms has been tested in the following browsers:
 To use Simple CSS forms, include the forms.css style sheet into your HTML 
 document.
 
-   <link href="/stylesheets/forms.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/forms.css" rel="stylesheet" type="text/css">
 
 ## Current issues
 
