@@ -28,3 +28,6 @@ document.
 
 - Add support for native form styling - if possible without to much browser 
   specific hacks.
+- Add error handling for forms/fields (error summary and inline errors).
+- Add help and information on forms/fields.
+- Add required/optional styling.
