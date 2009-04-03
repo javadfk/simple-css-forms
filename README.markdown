@@ -11,7 +11,6 @@ Simple CSS forms has been tested in the following browsers:
 * Firefox 3.0.7
 * Opera 9.63
 * Internet Explorer 8
-* Internet Explorer 7
 
 ## Setting up Simple CSS forms
 
