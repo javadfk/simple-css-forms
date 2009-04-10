@@ -65,23 +65,23 @@ fieldset + p {
   margin: 0;
 }
 
-div {
+form div {
   clear: left;
   margin: 0 0 18px;
   overflow: hidden;
   padding: 0 14px 0 10px;
 }
-div:last-child { margin: 0; }
+form div:last-child { margin: 0; }
 
-.inline { margin-bottom: 0; }
+form .inline { margin-bottom: 0; }
 
-.inline label {
+form .inline label {
   float: left;
   line-height: 36px;
   margin-right: 10px;
 }
 
-.inline input, .inline select {
+form .inline input, form .inline select {
   float: left;
   font-size: 14px;
   height: 24px;
@@ -89,4 +89,4 @@ div:last-child { margin: 0; }
   width: auto;
 }
 
-.inline input[type="checkbox"] { margin-right: 10px; }
+form .inline input[type="checkbox"] { margin-right: 10px; }
